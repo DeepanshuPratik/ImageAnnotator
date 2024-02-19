@@ -3,7 +3,7 @@ name: Run Python Script on Push
 on:
   push:
     branches:
-      - v5-dev  # Change this to your desired branch name
+      - main  # Change this to your desired branch name
 
 jobs:
   run_python_script:
