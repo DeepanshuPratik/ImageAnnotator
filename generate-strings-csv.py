@@ -6,7 +6,7 @@ def generate_random_string(length=11):
     """Generate a random string of given length."""
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
 
-def generate_csv_with_random_strings(filename, num_strings=5, string_length=10):
+def generate_csv_with_random_strings(filename, num_strings=6, string_length=11):
     with open(filename, 'r') as f:
         file_content = f.read()
     print(file_content)
