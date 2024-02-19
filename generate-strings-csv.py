@@ -15,6 +15,7 @@ def generate_csv_with_random_strings(filename, num_strings=5, string_length=10):
             csv_writer.writerow([generate_random_string(string_length)])
 
 if __name__ == "__main__":
-    generate_csv_with_random_strings('random_strings.csv')
+    generate_csv_with_random_strings('https://raw.githubusercontent.com/DeepanshuPratik/ImageAnnotator/main/random_strings.csv
+')
     print("CSV file generated successfully.")
 
