@@ -1,0 +1,22 @@
+name: Run Python Script on Push
+
+on:
+  push:
+    branches:
+      - v5-dev  # Change this to your desired branch name
+
+jobs:
+  run_python_script:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'  
+        
+    - name: Run Python Script
+      run: python ../../generate-strings-csv.py  # Replace with the path to your Python script
